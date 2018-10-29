@@ -1,0 +1,132 @@
+	
+	body, html {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.container {
+	  width: 500px;
+	  clear: both;
+	  margin: 0 auto;
+	}
+	
+	input[type=text],input[type=password], select {
+		width: 30%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+	
+	input[type=submit]{
+		background-color: #008AAF;
+		color: white;
+		padding: 15px 32px;
+		margin: 4px 2px;
+		border: none;
+		border-radius: 8px;
+		text-align: center;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	
+	input[type=submit], input[type=button] {
+		background-color: #008AAF;
+		color: white;
+		padding: 7px 16px;
+		margin: 1px 1px;
+		border: none;
+		border-radius: 8px;
+		text-align: center;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	
+	
+	.error {
+		width: 87%; 
+		margin: 10px auto;
+		padding: 5px;
+		border: 1px solid #a94442; 
+		color: #a94442; 
+		background: #f2dede; 
+		border-radius: 5px; 
+		text-align: center;
+		margin-left: 160px;
+	}
+
+	/*sidebar*/
+	.sidenav {
+		height: 100%;
+		width: 160px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		/*background-color: #1565c0;*/
+		overflow-x: hidden;
+		padding-top: 20px;
+	}
+
+	.sidenav a {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+	}
+
+	.sidenav a:hover {
+		color: #f1f1f1;
+	}
+
+	/*main body*/
+	.main {
+		margin-left: 160px; /* Same as the width of the sidenav */
+		font-size: 28px; /* Increased text to enable scrolling */
+		padding: 0px 10px;
+	}
+
+	@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+	}
+	
+	/*table*/
+	table {  
+		color: #333;
+		font-family: Helvetica, Arial, sans-serif;
+		width: 100%; 
+		/*border-collapse: collapse;*/
+		border-spacing: 1px;
+	}
+
+	td, th {  
+		border: 1px solid transparent; /* No more visible border */
+		height: 30px;
+	}
+
+	th {  
+		background: #DFDFDF;  /* Darken header a bit */
+		font-weight: bold;
+	}
+
+	td {  
+		width: 10%; /* 1/10 for each slot */
+		text-align: center;
+	} 
+	
+	td.blank{
+		background: white;
+	}
+	
+	td.userSlot{
+		color: #FFF;
+	}
+	
